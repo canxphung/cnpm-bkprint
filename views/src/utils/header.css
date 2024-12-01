@@ -1,0 +1,170 @@
+.sections-main {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    top: 10px;
+    z-index: 1;
+    right: 0;
+    width: 100%;
+    height: 10vh;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  .left-section {
+    display: flex;
+    flex: 3.5;
+    align-items: center;
+  }
+  
+  .middle-section {
+    flex: 0.8;
+  }
+  
+  .right-section {
+    display: flex;
+    flex: 3;
+    margin-right: 30px;
+    align-items: center;
+    flex-shrink: 0;
+    margin-left: 10px;
+  }
+  
+  /* Left Section */
+  .img-headers {
+    flex: 0.8;
+    padding-left: 20px;
+  }
+  
+  .oisp-official-logo-01-1-icon-header {
+    width: 60%;
+    object-fit: cover;
+  }
+  
+  .bkprint-header {
+    flex: 4;
+    font-size: 2.1vw;
+  }
+  
+  /* Right section */
+  .trang-chu-main {
+    display: flex;
+    flex: 1;
+    line-height: 18px;
+    padding: 15px 18px;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    width: auto;
+    transition: background-color 0.5s;
+    white-space: nowrap;
+  }
+  
+  .trang-chu-main:hover {
+    background-color: rgb(214, 214, 238);
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .img-header {
+    flex: 0.5;
+  }
+  
+  .n-1-icon-main {
+    padding-left: 10px;
+    width: 40px;
+  }
+
+  /* Modal Overlay (nền tối phủ trang chính) */
+.logout-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Nền tối đậm nhưng không hoàn toàn đen */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* Đảm bảo modal hiển thị trên cùng */
+}
+
+/* Nội dung Modal */
+.modal-content {
+  background-color: #ffffff; /* Nền sáng của modal */
+  padding: 30px;
+  border-radius: 8px; /* Bo góc cho modal */
+  width: 200px; /* Kích thước modal vừa phải */
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bóng đổ nhẹ cho modal */
+  border: 1px solid #ddd; /* Khung bao quanh modal */
+}
+
+/* Tiêu đề trong Modal */
+.modal-content h3 {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.8); /* Màu chữ trắng hơi mờ */
+  margin-bottom: 15px;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Nền tối */
+  z-index: 9999;
+}
+
+/* Nội dung Modal */
+.modal-content {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  width: 200px;  /* Chiều rộng modal */
+  height: 50px;  /* Chiều cao modal */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; /* Căn chỉnh các nút */
+  align-items: center;
+}
+
+/* Tiêu đề trong Modal */
+.modal-text {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.9); /* Màu chữ trắng nhẹ */
+  margin-bottom: 10px;
+}
+
+/* Các nút trong Modal */
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 20%;
+}
+
+.modal-buttons button {
+  font-size: 14px;
+  width: 45%; /* Giảm chiều rộng của các nút */
+  border-radius: 5px;
+}
+
+  @media (max-width: 1600px) {
+    .trang-chu-main {
+      font-size: 18px;
+    }
+  }
+  
+  /* Extra small devices (phones, 600px and down) */
+  @media only screen and (max-width: 600px) {
+    .right-section {
+      flex-direction: column;
+    }
+    .btn-container {
+      flex-direction: column;
+    }
+  }
+  
